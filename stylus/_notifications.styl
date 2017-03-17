@@ -1,0 +1,29 @@
+.notification
+  padding-top: .5%
+  padding-bottom: .5%
+  display: flex
+  p
+    font 400 14px "Open Sans"
+
+#upgrade-account-notification
+  background-color: #874db2
+
+#expired-account-notification
+  background-color: #fda1a1
+
+  p
+    margin-left 40px
+
+    &:before
+      position absolute
+      left 16px
+      top 34%
+      display block
+      content ""
+      width 16px
+      height 16px
+      background: transparent url('../img/alert-ico.png') no-repeat
+
+.close-notification
+  margin 0 3px 0 18px
+  cursor pointer

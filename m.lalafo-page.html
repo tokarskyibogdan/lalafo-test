@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lalafo Page</title>
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="css/main.css" rel="stylesheet"/>
+        <link href="css/main.mobile.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <ul class="header-mobile-nav text-right">
+                <li class="float-left btn-exit"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></li>
+                <li class="active"><i class="fa fa-user" aria-hidden="true"></i></li>
+                <li><i class="fa fa-plus-circle" aria-hidden="true"></i></li>
+                <li><i class="fa fa-map-marker" aria-hidden="true"></i></li>
+                <li><i class="fa fa-language" aria-hidden="true"></i></li>
+            </ul>
+        </header>
+        <form action="" method="post" id="form">
+            <h2 class="form-title">Customazing your Pro profile</h2>
+            <label for="image-input">Cover photo</label>
+            <img id="image-input-preview" src="img/image-ulpoad-preview-bg.png" alt="your image">
+            <div class="text-left">
+                <p id="image-input-error" class="text-danger"></p>
+                <input type='file' id="image-input" title="image-input" class="d-none" accept="image/*">
+                <span id='image-input-button'>upload the file</span>
+                <p id='image-input-validation'>Add a personal cover photo to the top of your profile. Cover photo should be 962x159 pixels and up to 4MB in size.</p>
+            </div>
+            <div class="row inputs-row">
+                <div class="col-12">
+                    <label for="email-input" class="d-block">E-mail</label>
+                    <input type="email" id="email-input" placeholder="Add email">
+                </div>
+                <div class="col-12">
+                    <label for="url-input" class="d-block">Create a custom URL</label>
+                    <input type="text" id="default-domain" disabled placeholder="Lalafo.kg /">
+                    <input type="text" id="url-input" placeholder="YourName">
+                </div>
+            </div>
+            <div class="row no-gutters inputs-row">
+                <div class="col-12">
+                    <label for="skype-input" class="d-block">Skype</label>
+                    <input type="email" id="skype-input" placeholder="Add Skype name">
+                </div>
+                <div class="col-12">
+                    <label for="site-input" class="d-block">Site</label>
+                    <input type="text" id="site-input" placeholder="Add website">
+                </div>
+            </div>
+            <label for="business-description">Write a short description of your business</label>
+            <textarea name="business-description" id="business-description" placeholder="Your Description"></textarea>
+            <div class="phones-section">
+                <div class="row no-gutters">
+                    <label class="col-6">Your phones</label>
+                </div>
+                <div class="row no-gutters phone-section">
+                    <div class="col-12">
+                        <select name="phone-code" id="phone-code">
+                            <option value="+380">+380</option>
+                            <option value="+280">+280</option>
+                            <option value="+180">+180</option>
+                        </select>
+                        <input type="number" id="phone-number" placeholder="+______________________">
+                    </div>
+                    <div class="col-12">
+                        <ul class="number-connect">
+                            <li>
+                                <label for="Whatsapp">Whatsapp</label>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" value="Whatsapp" id="Whatsapp" name="check" checked />
+                                    <label for="Whatsapp"></label>
+                                </div>
+                            </li>
+                            <li>
+                                <label for="Viber">Viber</label>
+                                <div class="checkbox-item">
+                                    <input type="checkbox" value="Viber" id="Viber" name="check" />
+                                    <label for="Viber"></label>
+                                </div>
+                            </li>
+                            <li class="delete-phone-number text-danger">Delete</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <span class="btn-add-phone-number">Add phone number</span>
+            <div class="schedule-section">
+                <label class="d-block">Working hours</label>
+                <div class="schedule-selection">
+                    <div class="day-selection col-12">
+                        <span class="dropdown-day-title">Days of the week</span>
+                        <p class="select-day-result"></p>
+                    </div>
+                    <div class="time-selection col-12">
+                        <span class="dropdown-time-title">Working time</span>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="week-days">
+                                <li>
+                                    <label>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" value="Mo" id="Monday" name="day-of-week">
+                                            <label for="Monday"></label>
+                                        </div>Monday</label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" value="Tu" id="Tuesday" name="day-of-week">
+                                            <label for="Tuesday"></label>
+                                        </div>Tuesday</label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" value="We" id="Wednesday" name="day-of-week">
+                                            <label for="Wednesday"></label>
+                                        </div>Wednesday</label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" value="Th" id="Thursday" name="day-of-week">
+                                            <label for="Thursday"></label>
+                                        </div>Thursday</label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" value="Fr" id="Friday" name="day-of-week">
+                                            <label for="Friday"></label>
+                                        </div>Friday</label>
+                                </li>
+                                <li class="disabled-checkbox-item">
+                                    <label>
+                                        <div class="checkbox-item ">
+                                            <input type="checkbox" value="Sa" id="Saturday" name="day-of-week">
+                                            <label for="Saturday"></label>
+                                        </div>Saturday</label>
+                                </li>
+                                <li>
+                                    <label>
+                                        <div class="checkbox-item">
+                                            <input type="checkbox" value="Su" id="Sunday" name="day-of-week">
+                                            <label for="Sunday"></label>
+                                        </div>Sunday</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-12">
+                            <ul class="schedule">
+                                <input type="time" value="00:00" name="from" class="begin-time-picker time-picker">
+                                <input type="time" value="00:00" name="till" class="end-time-picker time-picker">
+                                <label>
+                                    <div class="checkbox-item float-none d-inline-block">
+                                        <input type="checkbox" value="Weekend" id="weekend" name="weekend">
+                                        <label for="weekend"></label>
+                                    </div>day off</label>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="btn-add-work-day">Add day</span>
+            <div class="address-section">
+                <label for="map">Adress</label>
+                <input id="pac-input" class="controls" type="text" placeholder="Add your address">
+                <div id="map"></div>
+            </div>
+            <div class="form-controls d-flex justify-content-center">
+                <input type="reset" id="btn-reset-form" value="Cancel">
+                <input type="submit" id="btn-save-form" value="Save">
+            </div>
+        </form>
+        <a href="lalafo-page.html" class="btn-full-version">Full version</a>
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB4fwnKc18Q8VZ9wfbCPuDOJo7nI7fxuU&libraries=places&callback=initAutocomplete" async defer></script>
+        <script src="js/google-map.js"></script>
+        <script src="node_modules/tether/dist/js/tether.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/main-mobile.js"></script>
+    </body>
+</html>

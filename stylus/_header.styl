@@ -1,0 +1,46 @@
+header
+  padding 1%
+  background-color: #ffffff
+
+
+.language
+  background-color transparent
+  border none
+  outline none
+  margin-left 1%
+  width: 100px
+  background-position: 95% 50%
+
+.user-photo
+  width 28px
+  height 28px
+  border-radius 50%
+  background-color #6a7f8c
+  text-align center
+  color white
+  margin-right 10px
+  font 500 12px "Helvetica Neue"
+  padding-top: 5px
+
+.user-name
+  margin 0
+  padding 0
+  position: relative
+  font 500 14px "Helvetica Neue"
+  color #6a7f8c
+  cursor pointer
+
+  &:after
+    right -37%
+    top: 41%
+    border: solid transparent
+    content: " "
+    height: 0
+    width: 0
+    position: absolute
+    border-left-color: #6a7f8c
+    border-width: 5px
+    transform: rotate(90deg)
+
+.user-messages
+  margin-right 40px

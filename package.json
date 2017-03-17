@@ -1,0 +1,28 @@
+{
+  "name": "lalafo-page",
+  "version": "1.0.0",
+  "description": "lalafo-page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tokarskyibogdan/lalafo-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tokarskyibogdan/lalafo-page/issues"
+  },
+  "homepage": "https://github.com/tokarskyibogdan/lalafo-page#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.6",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-stylus": "^2.6.0",
+    "jquery": "^3.1.1",
+    "nib": "^1.1.2"
+  }
+}

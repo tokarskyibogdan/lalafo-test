@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lalafo Page</title>
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet"/>
+        <link href="css/main.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="row d-flex align-items-center justify-content-between">
+                    <div class="col-6">
+                        <a href="#"><img src="img/logo-lalafo.png" alt="logo"></a>
+                        <select name="language" id="language" class="language">
+                            <option value="en">English</option>
+                            <option value="ru">Русский</option>
+                            <option value="ukr">Українська</option>
+                        </select>
+                    </div>
+                    <div class="col-5 d-flex justify-content-between">
+                        <div class="user-menu d-inline-flex align-items-center">
+                            <a href="#" class="user-messages"><img src="img/message-icon.png" alt="msg-ico"></a>
+                            <div class="user-photo d-inline-block">A</div>
+                            <p class="user-name">Anton</p>
+                        </div>
+                        <button class="btn-sell">SELL YOUR STUFF</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="upgrade-account-notification">
+            <div class="container notification text-white justify-content-between align-items-center">
+                <p class="d-inline-block">Do you want to get more earning opportunities? Upgrade your account and sell faster!</p>
+                <div class="notification-control">
+                    <button class="btn-go-pro">GO PRO</button>
+                    <img src="img/close-ico.png" alt="close-notification" class="close-notification">
+                </div>
+            </div>
+        </div>
+        <div id="expired-account-notification">
+            <div class="container notification text-white justify-content-between align-items-center">
+                <p class="d-inline-block">Pro version expired. Upgrade your account and sell faster!</p>
+                <div class="notification-control">
+                    <button class="btn-go-pro">Extend</button>
+                    <img src="img/close-ico.png" alt="close-notification" class="close-notification">
+                </div>
+            </div>
+        </div>
+        <section class="info-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-5">
+                        <div class="statistic">
+                            <ul>
+                                <li>
+                                    <h5 class="statistic-counter">156</h5>
+                                    <p class="statistic-title">total number of ads</p>
+                                </li>
+                                <li>
+                                    <h5 class="statistic-counter">123</h5>
+                                    <p class="statistic-title">views</p>
+                                </li>
+                                <li>
+                                    <h5 class="statistic-counter">0</h5>
+                                    <p class="statistic-title">contacts</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-4 no-padding">
+                        <div class="manager">
+                            <div class="manager-photo">
+                                <img src="img/manager.png" alt="manager-photo" />
+                            </div>
+                            <div class="manager-info">
+                                <h6 class="manager-title">Contact the manager</h6>
+                                <p class="manager-phone"><i class="fa fa-whatsapp" aria-hidden="true"></i>+38(044)3885566</p>
+                            </div>
+                        </div>
+                        <ul class="manager-add-info">
+                            <li><i class="fa fa-phone" aria-hidden="true"></i>+380 (044) 388 55 66</li>
+                            <li><i class="fa fa-envelope-o" aria-hidden="true"></i>Busya@kyky.com</li>
+                            <li><i class="fa fa-skype" aria-hidden="true"></i>Busya</li>
+                        </ul>
+                    </div>
+                    <div class="col-3"><a href="#" class="btn-post-adds d-inline-flex justify-content-center align-items-center">POST A NEW ADS</a></div>
+                </div>
+            </div>
+        </section>
+        <main>
+            <div class="container">
+                <nav class="main-nav">
+                    <div class="navbar-nav flex-row">
+                        <a class="nav-item nav-link" href="#">My ads</a>
+                        <a class="nav-item nav-link" href="#">Messages</a>
+                        <a class="nav-item nav-link" href="#">Settings</a>
+                        <a class="nav-item nav-link new-link active"  href="#">Pro account</a>
+                        <a class="nav-item nav-link new-link" href="#">Statistics</a>
+                    </div>
+                </nav>
+                <div class="form-section">
+                    <h2 class="form-title">Customazing your Pro profile</h2>
+                    <form action="" method="post" id="form">
+                        <label for="image-input">Cover photo</label>
+                        <img id="image-input-preview" src="img/image-ulpoad-preview-bg.png" alt="your image">
+                        <div class="text-left">
+                            <p id="image-input-error" class="text-danger"></p>
+                            <input type='file' id="image-input" title="image-input" class="d-none" accept="image/*">
+                            <span id='image-input-button' class="float-left">upload the file</span>
+                            <p id='image-input-validation'>Add a personal cover photo to the top of your profile. Cover photo should be 962x159 pixels and up to 4MB in size.</p>
+                        </div>
+                        <div class="row no-gutters inputs-row">
+                            <div class="col-6">
+                                <label for="email-input" class="d-block">E-mail</label>
+                                <input type="email" id="email-input" placeholder="Add email">
+                            </div>
+                            <div class="col-6">
+                                <label for="url-input" class="d-block">Create a custom URL</label>
+                                <input type="text" id="default-domain" disabled placeholder="Lalafo.kg /">
+                                <input type="text" id="url-input" placeholder="YourName">
+                            </div>
+                        </div>
+                        <div class="row no-gutters inputs-row">
+                            <div class="col-6">
+                                <label for="skype-input" class="d-block">Skype</label>
+                                <input type="email" id="skype-input" placeholder="Add Skype name">
+                            </div>
+                            <div class="col-6">
+                                <label for="site-input" class="d-block">Site</label>
+                                <input type="text" id="site-input" placeholder="Add website">
+                            </div>
+                        </div>
+                        <label for="business-description">Write a short description of your business</label>
+                        <textarea name="business-description" id="business-description" placeholder="Your Description"></textarea>
+                        <div class="phones-section">
+                            <div class="row no-gutters">
+                                <label class="col-6">Your phones</label>
+                                <label class="col-6">Already activated with this phone number</label>
+                            </div>
+                            <div class="row no-gutters phone-section">
+                                <div class="col-6">
+                                    <select name="phone-code" id="phone-code">
+                                        <option value="+380">+380</option>
+                                        <option value="+280">+280</option>
+                                        <option value="+180">+180</option>
+                                    </select><input type="number" id="phone-number" placeholder="+______________________">
+                                </div>
+                                <div class="col-6">
+                                    <ul class="number-connect">
+                                        <li>
+                                            <label for="Whatsapp">Whatsapp</label>
+                                            <div class="checkbox-item">
+                                                <input type="checkbox" value="Whatsapp" id="Whatsapp" name="check" checked />
+                                                <label for="Whatsapp"></label>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <label for="Viber">Viber</label>
+                                            <div class="checkbox-item">
+                                                <input type="checkbox" value="Viber" id="Viber" name="check" />
+                                                <label for="Viber"></label>
+                                            </div>
+                                        </li>
+                                        <li class="delete-phone-number text-danger">Delete</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="btn-add-phone-number">Add phone number</span>
+                        <div class="schedule-section">
+                            <label class="d-block">Working hours</label>
+                            <div class="schedule-selection">
+                                <div class="day-selection col-4">
+                                    <span class="dropdown-day-title">Days of the week</span>
+                                    <p class="select-day-result"></p>
+                                </div>
+                                <div class="time-selection col-4">
+                                    <span class="dropdown-time-title">Working time</span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <ul class="week-days">
+                                            <li>
+                                                <label>
+                                                <div class="checkbox-item">
+                                                    <input type="checkbox" value="Mo" id="Monday" name="day-of-week">
+                                                    <label for="Monday"></label>
+                                                </div>Monday</label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                <div class="checkbox-item">
+                                                    <input type="checkbox" value="Tu" id="Tuesday" name="day-of-week">
+                                                    <label for="Tuesday"></label>
+                                                </div>Tuesday</label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                <div class="checkbox-item">
+                                                    <input type="checkbox" value="We" id="Wednesday" name="day-of-week">
+                                                    <label for="Wednesday"></label>
+                                                </div>Wednesday</label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                <div class="checkbox-item">
+                                                    <input type="checkbox" value="Th" id="Thursday" name="day-of-week">
+                                                    <label for="Thursday"></label>
+                                                </div>Thursday</label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                <div class="checkbox-item">
+                                                    <input type="checkbox" value="Fr" id="Friday" name="day-of-week">
+                                                    <label for="Friday"></label>
+                                                </div>Friday</label>
+                                            </li>
+                                            <li class="disabled-checkbox-item">
+                                                <label>
+                                                <div class="checkbox-item ">
+                                                    <input type="checkbox" value="Sa" id="Saturday" name="day-of-week">
+                                                    <label for="Saturday"></label>
+                                                </div>Saturday</label>
+                                            </li>
+                                            <li>
+                                                <label>
+                                                <div class="checkbox-item">
+                                                    <input type="checkbox" value="Su" id="Sunday" name="day-of-week">
+                                                    <label for="Sunday"></label>
+                                                </div>Sunday</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-4">
+                                        <ul class="schedule">
+                                            <input type="time" value="00:00" name="from" class="begin-time-picker time-picker">
+                                            <input type="time" value="00:00" name="till" class="end-time-picker time-picker">
+                                            <label>
+                                            <div class="checkbox-item float-none d-inline-block">
+                                                <input type="checkbox" value="Weekend" id="weekend" name="weekend">
+                                                <label for="weekend"></label>
+                                            </div>day off</label>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="btn-add-work-day">Add day</span>
+                        <div class="address-section">
+                            <label for="map">Adress</label>
+                            <input id="pac-input" class="controls" type="text" placeholder="Add your address">
+                            <div id="map"></div>
+                        </div>
+                        <div class="form-controls d-flex justify-content-center">
+                            <input type="reset" id="btn-reset-form" value="Cancel">
+                            <input type="submit" id="btn-save-form" value="Save">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container d-flex justify-content-between align-items-center">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="#">How to sell</a></li>
+                        <li><a href="#">User agreement</a></li>
+                        <li><a href="#">Paid features</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="m.lalafo-page.html">Mobile version </a></li>
+                        <li><a href="#">Advertising</a></li>
+                    </ul>
+                </nav>
+                <select name="country-select" id="country-select">
+                    <option value="serbia">Serbia</option>
+                    <option value="ukraine">Ukraine</option>
+                </select>
+            </div>
+            <div class="container">
+                <div class="sub-footer d-flex justify-content-between align-items-center">
+                    <div>
+                        <a href="#"><img src="img/footer-logo.png" alt="logo"></a>
+                        <span class="rights">© 2016  all right reserved</span>
+                    </div>
+                    <div>
+                        <a target="_blank" href="https://play.google.com/store/apps/details?id=com.lalafo&hl=ru"><img src="img/googleplay.png" alt="playmarket app"></a>
+                        <a target="_blank" href="https://itunes.apple.com/ru/app/%D0%BE%D0%B1%D1%8A%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F-lalafo/id1063347253?mt=8"><img src="img/appsstore.png" alt="appstore app"></a>
+                    </div>
+                    <ul class="footer-social-links">
+                        <li><a href="https://www.facebook.com/lalafoCOM/?fref=ts" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+                        <li><a href="https://twitter.com/lalafo_com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+        <script src="node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB4fwnKc18Q8VZ9wfbCPuDOJo7nI7fxuU&libraries=places&callback=initAutocomplete" async defer></script>
+        <script src="js/google-map.js"></script>
+        <script src="node_modules/tether/dist/js/tether.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

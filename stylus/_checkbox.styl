@@ -1,0 +1,52 @@
+.checkbox-item
+  float left
+  margin-right 16px
+  width: 18px;
+  height: 18px;
+  position: relative;
+  background: #54ba4a
+  label
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    background: white
+    &:after
+      z-index 2
+      content: '';
+      width: 9px;
+      height: 5px;
+      position: absolute;
+      top: 4px;
+      left: 3px;
+      border: 2px solid #54ba4a
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      opacity: 0;
+      transform: rotate(-45deg);
+
+    &:before
+      content ""
+      width 18px
+      height 18px
+      position absolute
+      top -2px
+      left -2px
+      border 2px solid #b4bfc5
+
+  input[type=checkbox]
+    visibility: hidden
+    &:checked + label:after
+      opacity 1
+    &:checked + label:before
+      opacity 0
+
+.disabled-checkbox-item  label
+  color gray
+
+.disabled-checkbox-item .checkbox-item
+  visibility hidden
+
