@@ -1,21 +1,21 @@
 {
-  "name": "lalafo-page",
+  "name": "lalafo-test",
   "version": "1.0.0",
-  "description": "lalafo-page",
+  "description": "lalafo-test",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tokarskyibogdan/lalafo-page.git"
+    "url": "git+https://github.com/tokarskyibogdan/lalafo-test.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/tokarskyibogdan/lalafo-page/issues"
+    "url": "https://github.com/tokarskyibogdan/lalafo-test/issues"
   },
-  "homepage": "https://github.com/tokarskyibogdan/lalafo-page#readme",
+  "homepage": "https://github.com/tokarskyibogdan/lalafo-test#readme",
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.6",
     "font-awesome": "^4.7.0",
